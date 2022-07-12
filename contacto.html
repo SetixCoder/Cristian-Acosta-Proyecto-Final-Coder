@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="Imagenes/Inicio/hojas.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>GrowShop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navBar">
+        <a href="index.html">
+          <img src="Imagenes/inicio/LogoKrypical.jpg" alt="" />
+        </a>
+        <nav>
+          <ul>
+            <li><a class="navBar__link" href="index.html">Inicio</a></li>
+            <li>
+              <a class="navBar__link" href="fertilizantes.html">Fertilizante</a>
+            </li>
+            <li>
+              <a class="navBar__link" href="sustratos.html">Sustratos</a>
+            </li>
+            <li>
+              <a class="navBar__link" href="contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a class="navBar__link" href="quienessomos.html">Nosotros</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <form class="formulario" action="">
+      <fieldset>
+        <legend>Contacto</legend>
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Escriba aqui su nombre"
+        />
+        <label for="apellido">Apellido:</label>
+        <input
+          type="text"
+          name="apellido"
+          id="apellido"
+          placeholder="Escriba aqui su apellido"
+        />
+        <label for="mail">Mail :</label>
+        <input
+          type="text"
+          name="mail"
+          id="mail"
+          placeholder="Escriba aqui su mail"
+        />
+        <div>Elije el sexo:</div>
+        <label for="hombre">HOMBRE</label>
+        <input type="radio" id="hombre" name="sexo" value="hombre" />
+        <br />
+        <label for="mujer">MUJER</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer" />
+        <br />
+        <label for="newleter">Recibir NewLater?</label>
+        <input type="checkbox" id="newleter" name="acepta" value="1" />
+        <br />
+        <label for="estado">ESTADO CIVIL</label>
+        <select id="estado">
+          <option value="C">Casado</option>
+          <option value="S">Soltero</option>
+          <option value="D">Divorciado</option>
+        </select>
+        <br />
+        <section class="formulario__boxTexto">
+          <label for="mensaje">Mensaje</label>
+          <br />
+          <textarea name="mensaje" id="mensaje" cols="80" rows="10"></textarea>
+          <br />
+        </section>
+        <section class="formulario__Botones">
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpiar Formulario" />
+        </section>
+      </fieldset>
+    </form>
+    <footer>
+      <div>
+        <h3>
+          Realizamos envios en moto mensajeria dentro de las 24hrs, la tarifa
+          puede aumentar por lluvias y
+        </h3>
+        <h3>
+          por correo argentino o andreani en 4 a 6 dias habiles, interior del
+          pais 10 a 15 dias habiles.
+        </h3>
+        <h3>
+          Tambien podes pasar a retirar por las sucursales de ramos mejia o
+          isidro casanova
+        </h3>
+      </div>
+      <section class="pagos">
+        <h2>Medios de Pago</h2>
+        <div>
+          <img src="Imagenes/Inicio/mastercard_PNG3.png" alt="" />
+          <img src="Imagenes/Inicio/visa_PNG10.png" alt="" />
+          <img src="Imagenes/Inicio/american.png" alt="" />
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
