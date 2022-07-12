@@ -1,0 +1,45 @@
+body {
+  background: $colorFondo;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro1 {
+  text-align: center;
+  color: $textColor;
+  font-family: $fuentePrincipal;
+  font-size: $textSm;
+  padding: 1.5rem;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 85%;
+    padding: 2rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .productos {
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    img {
+      width: 25%;
+      padding: 2rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  .intro1 {
+    font-size: $textSm;
+  }
+}
