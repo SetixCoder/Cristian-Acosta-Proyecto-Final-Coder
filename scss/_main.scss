@@ -12,18 +12,100 @@ body {
   text-align: center;
   color: $textColor;
   font-family: $fuentePrincipal;
-  font-size: $textSm;
+  font-size: map-get($map: $fsize, $key: "uno");
   padding: 1.5rem;
+  h2 {
+    font-size: map-get($map: $fsize, $key: "uno");
+  }
 }
 
 .productos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @extend .container;
   img {
     width: 85%;
     padding: 2rem;
     padding-bottom: 4rem;
+  }
+}
+
+//Pagina Fertilizantes y Sustratos
+
+.secproductos {
+  font-family: $fuentePrincipal;
+  h2 {
+    font-size: 8rem;
+    text-align: center;
+    color: $textColor;
+    padding: 2rem 0 0 0;
+  }
+  section h2 {
+    font-size: map-get($map: $fsize, $key: "cuatro");
+    text-align: left;
+    padding: 1rem 0 1rem;
+  }
+}
+
+.secproductos__etapas {
+  @extend .container;
+  div {
+    @extend .container;
+    img {
+      width: 80%;
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+//Pagina Contacto
+
+.formulario {
+  width: 60%;
+  margin: auto;
+  padding: 2rem 0 2rem 0;
+  font-family: $fuentePrincipal;
+  color: $textColor;
+  font-size: map-get($map: $fsize, $key: "uno");
+  fieldset {
+    border-color: $black;
+    border-style: double;
+    padding: 1rem;
+  }
+}
+
+.formulario__boxTexto {
+  text-align: center;
+}
+
+.formulario__Botones {
+  text-align: center;
+  input {
+    background-color: $black;
+    font-family: $fuentePrincipal;
+    font-size: map-get($map: $fsize, $key: "uno");
+    color: $textColor;
+    padding: 0.5rem;
+  }
+}
+
+//Pagina Nosotros
+
+.nosotros {
+  font-family: $fuentePrincipal;
+  font-size: map-get($map: $fsize, $key: "uno");
+  color: $white;
+  text-align: center;
+  padding: 2rem;
+  line-height: 3rem;
+  h2 {
+    padding: 2rem;
+    color: $textColor;
+  }
+  table {
+    margin: 1rem auto;
+    tr th,
+    td {
+      padding: 1rem;
+    }
   }
 }
 
@@ -40,6 +122,35 @@ body {
   }
 
   .intro1 {
-    font-size: $textSm;
+    font-size: map-get($map: $fsize, $key: "uno");
+    h2 {
+      font-size: map-get($map: $fsize, $key: "uno");
+    }
+  }
+
+  /* Pagina Fertilizante y Sustratos */
+
+  .secproductos__etapas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .secproductos__etapas div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .secproductos__etapas div img {
+    width: 25%;
+    padding-bottom: 3rem;
+  }
+
+  .secproductos h2 {
+    font-size: map-get($map: $fsize, $key: "cuatro");
+  }
+
+  .secproductos section h2 {
+    font-size: map-get($map: $fsize, $key: "dos");
   }
 }

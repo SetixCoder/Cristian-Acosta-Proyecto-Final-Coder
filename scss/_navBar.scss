@@ -5,6 +5,7 @@ header {
   position: sticky;
   top: 0rem;
   z-index: 1;
+  width: $Width;
 }
 
 .navBar__link:hover,
@@ -30,7 +31,7 @@ header {
       text-transform: uppercase;
       color: $textColor;
       margin: 0 0.7rem 0 0.7rem;
-      font-size: $textMd;
+      font-size: map-get($map: $fsize, $key: "uno");
     }
     a:hover,
     a:focus {
@@ -41,12 +42,15 @@ header {
 
 .banner {
   a img {
-    max-width: 100%;
+    max-width: $Width;
   }
 }
 
 @media (min-width: 768px) {
   .navBar {
     flex-direction: row;
+    nav ul li a {
+      font-size: map-get($map: $fsize, $key: "dos");
+    }
   }
 }

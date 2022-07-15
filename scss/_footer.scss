@@ -1,14 +1,11 @@
 footer {
   color: $white;
-  font-family: "Staatliches", cursive;
+  font-family: $fuentePrincipal;
   background-color: $black;
   padding: 2rem 0rem 0rem 2rem;
-  font-size: $textSm;
+  font-size: map-get($map: $fsize, $key: "uno");
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  grid-area: pie;
+  @include flexDirJus(flex, column, center);
   div {
     width: 80%;
   }
@@ -17,12 +14,10 @@ footer {
 .pagos {
   padding-top: 2rem;
   color: $colorPagos;
-  font-size: $textXl;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: map-get($map: $fsize, $key: "tres");
+  @include flexDirJus(flex, column, center);
   img {
-    width: 32.3%;
+    width: 30.9%;
   }
 }
 
@@ -39,10 +34,8 @@ footer {
 
   .pagos {
     color: $colorPagos;
-    font-size: $textMd;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: map-get($map: $fsize, $key: "dos");
+    @include flexDirJus(flex, column, center);
     img {
       width: 32%;
     }

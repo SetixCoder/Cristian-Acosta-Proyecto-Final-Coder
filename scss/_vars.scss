@@ -3,3 +3,10 @@ $black: rgb(9, 9, 9);
 $colorFondo: rgb(82, 79, 79);
 $white: rgb(247, 241, 241);
 $colorPagos: rgb(0, 228, 236);
+$Width: 100%;
+
+@mixin flexDirJus($dFlex, $dirF, $justF) {
+  display: $dFlex;
+  flex-direction: $dirF;
+  justify-content: $justF;
+}

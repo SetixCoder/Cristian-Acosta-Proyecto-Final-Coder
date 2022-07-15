@@ -10,7 +10,8 @@ header {
   padding: 0rem 0;
   position: sticky;
   top: 0rem;
-  z-index: 1; }
+  z-index: 1;
+  width: 100%; }
 
 .navBar__link:hover,
 .navBar__link:focus {
@@ -33,7 +34,7 @@ header {
       text-transform: uppercase;
       color: #13f813;
       margin: 0 0.7rem 0 0.7rem;
-      font-size: 3rem; }
+      font-size: 2rem; }
     .navBar nav ul a:hover,
     .navBar nav ul a:focus {
       opacity: 0.65; }
@@ -43,12 +44,14 @@ header {
 
 @media (min-width: 768px) {
   .navBar {
-    flex-direction: row; } }
+    flex-direction: row; }
+    .navBar nav ul li a {
+      font-size: 3rem; } }
 
 body {
   background: #524f4f; }
 
-.container {
+.container, .productos, .secproductos__etapas, .secproductos__etapas div {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -57,17 +60,71 @@ body {
   text-align: center;
   color: #13f813;
   font-family: "Staatliches", cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 1.5rem; }
+  .intro1 h2 {
+    font-size: 2rem; }
 
-.productos {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .productos img {
-    width: 85%;
+.productos img {
+  width: 85%;
+  padding: 2rem;
+  padding-bottom: 4rem; }
+
+.secproductos {
+  font-family: "Staatliches", cursive; }
+  .secproductos h2 {
+    font-size: 8rem;
+    text-align: center;
+    color: #13f813;
+    padding: 2rem 0 0 0; }
+  .secproductos section h2 {
+    font-size: 5rem;
+    text-align: left;
+    padding: 1rem 0 1rem; }
+
+.secproductos__etapas div img {
+  width: 80%;
+  padding-bottom: 2rem; }
+
+.formulario {
+  width: 60%;
+  margin: auto;
+  padding: 2rem 0 2rem 0;
+  font-family: "Staatliches", cursive;
+  color: #13f813;
+  font-size: 2rem; }
+  .formulario fieldset {
+    border-color: #090909;
+    border-style: double;
+    padding: 1rem; }
+
+.formulario__boxTexto {
+  text-align: center; }
+
+.formulario__Botones {
+  text-align: center; }
+  .formulario__Botones input {
+    background-color: #090909;
+    font-family: "Staatliches", cursive;
+    font-size: 2rem;
+    color: #13f813;
+    padding: 0.5rem; }
+
+.nosotros {
+  font-family: "Staatliches", cursive;
+  font-size: 2rem;
+  color: #f7f1f1;
+  text-align: center;
+  padding: 2rem;
+  line-height: 3rem; }
+  .nosotros h2 {
     padding: 2rem;
-    padding-bottom: 4rem; }
+    color: #13f813; }
+  .nosotros table {
+    margin: 1rem auto; }
+    .nosotros table tr th,
+    .nosotros table td {
+      padding: 1rem; }
 
 @media (min-width: 768px) {
   .productos {
@@ -79,19 +136,35 @@ body {
       padding: 2rem;
       padding-bottom: 4rem; }
   .intro1 {
-    font-size: 2.5rem; } }
+    font-size: 2rem; }
+    .intro1 h2 {
+      font-size: 2rem; }
+  /* Pagina Fertilizante y Sustratos */
+  .secproductos__etapas {
+    display: flex;
+    flex-direction: column; }
+  .secproductos__etapas div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  .secproductos__etapas div img {
+    width: 25%;
+    padding-bottom: 3rem; }
+  .secproductos h2 {
+    font-size: 5rem; }
+  .secproductos section h2 {
+    font-size: 3rem; } }
 
 footer {
   color: #f7f1f1;
   font-family: "Staatliches", cursive;
   background-color: #090909;
   padding: 2rem 0rem 0rem 2rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  display: flex;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  grid-area: pie; }
+  justify-content: center; }
   footer div {
     width: 80%; }
 
@@ -101,9 +174,9 @@ footer {
   font-size: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  justify-content: center; }
   .pagos img {
-    width: 32.3%; }
+    width: 30.9%; }
 
 @media (min-width: 768px) {
   footer {
@@ -118,6 +191,6 @@ footer {
     font-size: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    justify-content: center; }
     .pagos img {
       width: 32%; } }
