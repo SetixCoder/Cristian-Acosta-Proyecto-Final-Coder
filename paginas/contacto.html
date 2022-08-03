@@ -8,12 +8,13 @@
       name="description"
       content="Aprovecha nuestro asesoramiento personalizado para armar tu indoor a medida contactandote con nosotros"
     />
+    <meta name="author" content="Cristian Acosta" />
     <link
       rel="shortcut icon"
       href="Imagenes/Inicio/hojas.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto Krypical GrowShop</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
@@ -25,24 +26,31 @@
       <div class="navBar">
         <a href="index.html">
           <img
-            src="Imagenes/Inicio/LogoKrypical.jpg"
-            alt="Logo de Krypical Growshop"
+            src="../Imagenes/Inicio/LogoKrypical.jpg"
+            alt="Logo de Krypical GrowShop"
           />
         </a>
-        <nav>
+        <label for="menu" class="nav__label"
+          ><img
+            src="../Imagenes/menu.svg"
+            alt="Menu desplegable"
+            class="nav__img"
+        /></label>
+        <input type="checkbox" id="menu" class="nav__input" />
+        <nav class="nav__menu">
           <ul>
-            <li><a class="navBar__link" href="index.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li>
-              <a class="navBar__link" href="fertilizantes.html">Fertilizante</a>
+              <a href="fertilizantes.html">Fertilizante</a>
             </li>
             <li>
-              <a class="navBar__link" href="sustratos.html">Sustratos</a>
+              <a href="sustratos.html">Sustratos</a>
             </li>
             <li>
-              <a class="navBar__link" href="contacto.html">Contacto</a>
+              <a href="contacto.html">Contacto</a>
             </li>
             <li>
-              <a class="navBar__link" href="quienessomos.html">Nosotros</a>
+              <a href="quienessomos.html">Nosotros</a>
             </li>
           </ul>
         </nav>
@@ -119,9 +127,9 @@
       <section class="pagos">
         <h2>Medios de Pago</h2>
         <div>
-          <img src="./Imagenes/Inicio/mastercard.jpg" alt="Logo Mastercard" />
-          <img src="./Imagenes/Inicio/visa.jpg" alt="Logo visa" />
-          <img src="./Imagenes/Inicio/american.jpg" alt="Logo american" />
+          <img src="../Imagenes/Inicio/mastercard.jpg" alt="Logo Mastercard" />
+          <img src="../Imagenes/Inicio/visa.jpg" alt="Logo visa" />
+          <img src="../Imagenes/Inicio/american.jpg" alt="Logo american" />
         </div>
       </section>
     </footer>

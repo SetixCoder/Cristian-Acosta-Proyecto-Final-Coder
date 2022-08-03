@@ -3,8 +3,9 @@ footer {
   font-family: $fuentePrincipal;
   background-color: $black;
   padding: 2rem 0rem 0rem 2rem;
-  font-size: map-get($map: $fsize, $key: "uno");
+  font-size: 1.4rem;
   display: flex;
+  align-items: center;
   @include flexDirJus(flex, column, center);
   div {
     width: 80%;
@@ -14,7 +15,8 @@ footer {
 .pagos {
   padding-top: 2rem;
   color: $colorPagos;
-  font-size: map-get($map: $fsize, $key: "tres");
+  font-size: map-get($map: $fsize, $key: "dos");
+  align-items: center;
   @include flexDirJus(flex, column, center);
   img {
     width: 30.9%;
@@ -23,7 +25,7 @@ footer {
 
 @media (min-width: 768px) {
   footer {
-    font-size: 2rem;
+    font-size: map-get($map: $fsize, $key: "uno");
     padding-bottom: 2rem;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +37,6 @@ footer {
   .pagos {
     color: $colorPagos;
     font-size: map-get($map: $fsize, $key: "dos");
-    @include flexDirJus(flex, column, center);
     img {
       width: 32%;
     }

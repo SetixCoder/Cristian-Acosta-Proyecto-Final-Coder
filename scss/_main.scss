@@ -33,7 +33,7 @@ body {
 .secproductos {
   font-family: $fuentePrincipal;
   h2 {
-    font-size: 8rem;
+    font-size: map-get($map: $fsize, $key: "cinco");
     text-align: center;
     color: $textColor;
     padding: 2rem 0 0 0;

@@ -13,40 +13,80 @@ header {
   z-index: 1;
   width: 100%; }
 
-.navBar__link:hover,
-.navBar__link:focus {
-  opacity: 0.65; }
-
 .navBar {
   width: 80%;
   margin: 0 auto;
-  max-width: 1320px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center; }
   .navBar a img {
-    width: 90%; }
-  .navBar nav ul {
-    display: flex; }
-    .navBar nav ul li a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #13f813;
-      margin: 0 0.7rem 0 0.7rem;
-      font-size: 2rem; }
-    .navBar nav ul a:hover,
-    .navBar nav ul a:focus {
-      opacity: 0.65; }
+    width: 80%; }
+
+.nav__input {
+  display: none; }
+
+.nav__img {
+  width: 400%;
+  padding-left: 0rem;
+  padding-top: 4.5rem; }
+
+.nav__menu ul {
+  position: fixed;
+  bottom: 0;
+  top: 14.7rem;
+  background-color: rgba(0, 0, 0, 0.801);
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  clip-path: circle(0 at center);
+  list-style: none; }
+  .nav__menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #13f813;
+    margin: 0 0.7rem 0 0.7rem;
+    font-size: 3rem; }
+
+.nav__input:checked + .nav__menu ul {
+  clip-path: circle(100% at center); }
 
 .banner a img {
   max-width: 100%; }
 
 @media (min-width: 768px) {
   .navBar {
-    flex-direction: row; }
-    .navBar nav ul li a {
-      font-size: 3rem; } }
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .navBar a img {
+      width: 90%; }
+    .navBar nav ul {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(255, 0, 0, 0);
+      position: relative;
+      top: auto;
+      clip-path: none; }
+      .navBar nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #13f813;
+        margin: 0 0.7rem 0 0.7rem;
+        font-size: 3rem; }
+      .navBar nav ul a:hover,
+      .navBar nav ul a:focus {
+        opacity: 0.65; }
+  .nav__input,
+  .nav__label {
+    display: none; } }
 
 body {
   background: #524f4f; }
@@ -160,8 +200,9 @@ footer {
   font-family: "Staatliches", cursive;
   background-color: #090909;
   padding: 2rem 0rem 0rem 2rem;
-  font-size: 2rem;
+  font-size: 1.4rem;
   display: flex;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -171,7 +212,8 @@ footer {
 .pagos {
   padding-top: 2rem;
   color: #00e4ec;
-  font-size: 4rem;
+  font-size: 3rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -188,9 +230,6 @@ footer {
       width: 50%; }
   .pagos {
     color: #00e4ec;
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    font-size: 3rem; }
     .pagos img {
       width: 32%; } }
