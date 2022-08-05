@@ -23,7 +23,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   footer {
     font-size: map-get($map: $fsize, $key: "uno");
     padding-bottom: 2rem;
@@ -40,5 +40,11 @@ footer {
     img {
       width: 32%;
     }
+  }
+}
+
+@media (max-width: 425px) {
+  .pagos {
+    font-size: map-get($map: $fsize, $key: "uno");
   }
 }

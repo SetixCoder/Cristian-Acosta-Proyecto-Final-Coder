@@ -19,7 +19,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   .navBar a img {
     width: 80%; }
 
@@ -57,7 +58,7 @@ header {
 .banner a img {
   max-width: 100%; }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .navBar {
     width: 80%;
     margin: 0 auto;
@@ -87,6 +88,15 @@ header {
   .nav__input,
   .nav__label {
     display: none; } }
+
+@media (max-width: 425px) {
+  .navBar {
+    overflow: hidden; }
+  .nav__img {
+    width: 300%;
+    padding-right: 4rem; }
+  .nav__menu ul {
+    top: 12.7rem; } }
 
 body {
   background: #524f4f; }
@@ -136,7 +146,8 @@ body {
   .formulario fieldset {
     border-color: #090909;
     border-style: double;
-    padding: 1rem; }
+    padding: 1rem;
+    box-shadow: 0 5px 10px -5px black; }
 
 .formulario__boxTexto {
   text-align: center; }
@@ -166,7 +177,7 @@ body {
     .nosotros table td {
       padding: 1rem; }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .productos {
     flex-direction: row;
     justify-content: space-between;
@@ -191,9 +202,53 @@ body {
     width: 25%;
     padding-bottom: 3rem; }
   .secproductos h2 {
-    font-size: 5rem; }
+    font-size: 3rem; }
   .secproductos section h2 {
-    font-size: 3rem; } }
+    font-size: 2rem; } }
+
+@media (max-width: 425px) {
+  /* Pagina Fertilizante y Sustratos */
+  .secproductos h2 {
+    font-size: 3rem; }
+  .secproductos section h2 {
+    font-size: 2rem; }
+  .formulario {
+    width: 90%; }
+    .formulario fieldset {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      align-items: center; }
+      .formulario fieldset input,
+      .formulario fieldset #estado {
+        width: 100%;
+        background: none;
+        color: #13f813;
+        padding: 0.6rem;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black; }
+  fieldset .formulario__Botones {
+    display: flex;
+    flex-direction: row; }
+    fieldset .formulario__Botones input {
+      background-color: black;
+      color: #07c700; }
+  #mensaje {
+    width: 90%;
+    border-radius: 1rem;
+    padding: 2rem; }
+  .nosotros section h2 {
+    padding: 2rem;
+    color: #13f813; }
+  .nosotros section div {
+    font-size: 1.5rem; }
+  table {
+    margin: 1rem auto; }
+    table tr th,
+    table td {
+      padding: 1rem;
+      font-size: 1.1rem; } }
 
 footer {
   color: #f7f1f1;
@@ -220,7 +275,7 @@ footer {
   .pagos img {
     width: 30.9%; }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   footer {
     font-size: 2rem;
     padding-bottom: 2rem;
@@ -233,3 +288,7 @@ footer {
     font-size: 3rem; }
     .pagos img {
       width: 32%; } }
+
+@media (max-width: 425px) {
+  .pagos {
+    font-size: 2rem; } }

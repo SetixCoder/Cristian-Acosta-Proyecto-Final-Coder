@@ -15,6 +15,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
   a img {
     width: 80%;
   }
@@ -61,7 +62,7 @@ header {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .navBar {
     width: 80%;
     margin: 0 auto;
@@ -97,5 +98,19 @@ header {
   .nav__input,
   .nav__label {
     display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .navBar {
+    overflow: hidden;
+  }
+  .nav__img {
+    width: 300%;
+    padding-right: 4rem;
+  }
+
+  .nav__menu ul {
+    top: 12.7rem;
   }
 }
